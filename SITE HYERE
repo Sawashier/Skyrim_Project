@@ -1,0 +1,24 @@
+
+           *****SITE OFFICE HYERE*****
+
+#header {
+    z-index: 200;
+    position: relative;
+    width: 100%;
+    background: #000;
+}
+#header, #content, #content-actualite, #navbar, #sidebar-left, #sidebar-right, #footer, #closure-blocks {
+    overflow: visible;
+    word-wrap: break-word;
+}
+#page, #header, #navbar, #main, #main-inner, #footer, #closure-blocks {
+    width: 100%;
+    text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline: 0 none;
+    background: transparent;
+}

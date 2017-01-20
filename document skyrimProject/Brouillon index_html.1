@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+        <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+
+        <title>Acceuil</title>
+
+    </head>
+
+    <body>
+
+
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row centre">
+                         <img  src="img/Skyrim_Logo.png" alt="logo"  title="skyrim by night">
+                </div>
+                <ul class="bxslider">
+                    <li><img src="img/slider1.jpg" width="1920" alt="sld1"/></li>
+                    <li><img src="img/slider2.jpg" width="1920" alt="sld2"/></li>
+                    <li><img src="img/slider3.jpg" width="1920" alt="sld3"/></li>
+                    <li><img src="img/slider4.jpg" width="1920" alt="sld4"/></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('.bxslider').bxSlider({
+                    auto: true,
+                    autoControls: true,
+                    adaptiveHeight: true,
+                    mode: 'fade'
+
+                });
+            });
+        </script>
+
+
+
+
+
+    </body>
+</html>
+
+
+<!--http://bxslider.com/examples/slideshow-adaptive-height-->
+<!--http://bxslider.com/examples/auto-show-start-stop-controls-->

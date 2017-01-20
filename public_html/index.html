@@ -1,16 +1,249 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Page d'acceuil</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="font/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="enTete" class="header">
+            <div class="logoPNG left">
+                <img class="logoPNG" src="img/logotestSKYRIMsmall.png" alt="logo"/>
+            </div>
+
+            <div id="connectRecherche" class="searchBlock">                
+                <a href=""><div class="btn1">Connectez-vous</div></a> 
+                <div class ="btn2" onclick="//...."><i class="fa fa-search tagLoupe" aria-hidden="true"></i>
+                </div>
+                <input class="champ" type="text" placeholder="Rechercher..."
+                       value="" id='search'/>
+            </div>
+
+            <div id="toolBar" class="toolbar">
+
+                <div id="monmenu">
+                    <ul class="niveau1">
+                        <li><span class="orange">Decouverte</span><br>du Pays
+                            <ul class="niveau2">
+                                <li class="plus">
+                                    <a href= "">
+                                        Regions
+                                    </a>
+                                    <span style ="margin-left: 60px;">
+                                        <i class="fa fa-caret-right right" aria-hidden="true"></i>
+                                    </span>
+                                    <ul class="niveau3">
+                                        <li>
+                                            <a href= "">
+                                                Demander la note
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href= "">
+                                                Draguer la serveuse
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href= "">
+                                        Villes
+                                    </a>
+                                    <span style ="margin-left: 82px;">
+                                        <i class="fa fa-caret-right right" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href= "">
+                                        Temples  
+                                    </a>
+                                    <span style ="margin-left: 62px;">
+                                        <i class="fa fa-caret-right right" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href= "">
+                                        Coutumes
+                                    </a>
+                                    <span style ="margin-left: 45px;">
+                                        <i class="fa fa-caret-right right" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href= "">
+                                        A Voir  
+                                    </a>
+                                    <span style ="margin-left: 64px;">
+                                        <i class="fa fa-caret-right right" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="monmenu">
+                    <ul class="niveau1">
+                        <li><div class="orange">La Montagne</div>A Vivre
+                            <ul class="niveau2">
+                                <li class="plus">
+                                    <a href= "http://www.rankspirit.com">
+
+                                        Extras
+                                    </a>
+                                    <ul class="niveau3">
+                                        <li>
+                                            <a href= "http://www.rankspirit.com">
+
+                                                Demander la note
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href= "http://www.rankspirit.com">
+                                                Draguer la serveuse
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+
+                                        Entrée
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+
+                                        Plat
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+
+                                        Dessert
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+                                        Café
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="monmenu">
+                    <ul class="niveau1">
+                        <li><div class="orange">Visites Guidees</div>Randonnee
+                            <ul class="niveau2">
+                                <li class="plus">
+                                    <a href= "http://www.rankspirit.com">
+
+                                        Extras
+                                    </a>
+                                    <ul class="niveau3">
+                                        <li>
+                                            <a href= "http://www.rankspirit.com">
+
+                                                Demander la note
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href= "http://www.rankspirit.com">
+                                                Draguer la serveuse
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+
+                                        Entrée
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+
+                                        Plat
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+
+                                        Dessert
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+                                        Café
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="monmenu">
+                    <ul class="niveau1">
+                        <li><div class="orange">Hebergement</div>Restauration
+                            <ul class="niveau2">
+                                <li class="plus">
+                                    <a href= "http://www.rankspirit.com">
+                                        Extras
+                                    </a>
+                                    <ul class="niveau3">
+                                        <li>
+                                            <a href= "http://www.rankspirit.com">
+                                                Demander la note
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href= "http://www.rankspirit.com">
+                                                Draguer la serveuse
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+                                        Entrée
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+                                        Plat
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+                                        Dessert
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href= "http://www.rankspirit.com">
+                                        Café
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <video autoplay muted loop poster="Video/iceVideo.mp4" id="bgvid">
+            <source src="Video/iceVideo.mp4" type="video/mp4">
+        </video>
+
     </body>
 </html>

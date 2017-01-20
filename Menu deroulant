@@ -1,0 +1,312 @@
+http://www.css-faciles.com/menu-deroulant.php
+
+CSS
+
+<style type="text/css">
+  ul ul {display: none; position: absolute; left: 144px; top: -1px; margin:0px; padding: 0px; border: 1px solid grey;}
+  li {list-style-type: none; position: relative; width: 140px; background-color: #E0E0E0; padding: 2px; margin: 0px}
+  li:hover {background-color: #FFFF70;}
+  li:hover ul.niveau2, li li:hover ul.niveau3 {display: block}
+  li.plus {background-position:right; background-image: url(illustrations/fdroite.gif); background-repeat: no-repeat; border-bottom: 1px solid grey;}
+</style>
+
+HTML
+
+<ul class="niveau1">
+  <li>
+    Menu
+    <ul class="niveau2">
+      <li class="plus">
+        Extras
+        <ul class="niveau3">
+          <li>Demander la note</li>
+          <li>Draguer la serveuse</li>
+        </ul>
+      </li>
+      <li>Entr&eacute;e</li>
+      <li>Plat</li>
+      <li>Dessert</li>
+      <li>Caf&eacute;</li>
+    </ul>
+  </li>
+</ul>
+
+
+__________________________________________________________________________
+
+!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+      <style type="text/css">
+        #monmenu {font-family: trebuchet ms, arial, tahoma, verdana, sans-serif; font-size: 90%; font-weight:bold;}
+        #monmenu ul ul {display: none; left: 144px; top: -1px; position: absolute; margin:0px; padding: 0px; border: 1px solid #B0B0B0;}
+        #monmenu li {list-style-type: none; position: relative; width: 140px; background-color: #E0E0E0; padding: 2px; margin: 0px}
+        #monmenu li:hover, #monmenu li.sfhover {background-color: #FFFF70;}
+        #monmenu li a {text-decoration:none;}
+        #monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3, #monmenu li.sfhover ul.niveau2, #monmenu li li.sfhover ul.niveau3 {display: block}
+        #monmenu li.plus {background-position:right; background-image: url(illustrations/ fdroite.gif); background-repeat: no-repeat; border-bottom: 1px solid #B0B0B0;}
+      </style>
+      <!--[if lt IE 7]>
+        <script type="text/javascript">
+            // Fonction destinée à remplacer le "LI:hover" pour IE 6
+            sfHover = function() {
+                var sfEls = document.getElementById("monmenu").getElementsByTagName("li");
+                for (var i=0; i<sfEls.length; i++) {
+                    sfEls[i].onmouseover = function() {
+                        this.className = this.className.replace(new RegExp(" sfhover"), "");
+                        this.className += " sfhover";
+                    }
+                    sfEls[i].onmouseout = function() {
+                        this.className = this.className.replace(new RegExp(" sfhover"), "");
+                    }
+                }
+            }
+            if (window.attachEvent) window.attachEvent("onload", sfHover);
+        </script>
+        <style type="text/css">
+            #monmenu li {width: 144px;}
+        </style>
+     <![endif]-->
+     <meta name="keywords"
+ content="CSS, cascading style sheets, mise en page, design, site, web, techniques, sites, webmaster, page">
+     <meta name="description"
+ content="Voici un exemple de code de menu hiérarchique déroulant réalisé à l'aide de CSS.">
+     <title>Exemple de menu hiérarchique en CSS</title>
+  </head>
+  <body>
+    <div id="monmenu">
+        <ul class="niveau1">
+           <li> Menu
+               <ul class="niveau2">
+                  <li class="plus">
+                    <a href= "http://www.rankspirit.com">
+                       <img alt=" " src="illustrations/ menu-deroulant/ bebe.gif"
+ border="none">
+                       Extras
+                    </a>
+                    <ul class="niveau3">
+                      <li>
+                        <a href= "http://www.rankspirit.com">
+                            <img alt=" " src="illustrations/ menu-deroulant/ note.gif"
+ border="none">
+                           Demander la note
+                         </a>
+                        </li>
+                        <li>
+                            <a href= "http://www.rankspirit.com">
+                                <img alt=" "
+ src="illustrations/ menu-deroulant/ serveuse.gif"
+ border="none">                 Draguer la serveuse
+                            </a>
+                        </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href= "http://www.rankspirit.com">
+                        <img alt=" "
+ src="illustrations/ menu-deroulant/ entree.gif"
+ border="none">
+                        Entrée
+                    </a>
+                  </li>
+                  <li>
+                    <a href= "http://www.rankspirit.com">
+                        <img alt=" "
+ src="illustrations/ menu-deroulant/ plat.gif"
+ border="none">
+                        Plat
+                    </a>
+                  </li>
+                  <li>
+                     <a href= "http://www.rankspirit.com">
+                        <img alt=" "
+ src="illustrations/ menu-deroulant/ dessert.gif"
+ border="none">
+                        Dessert
+                     </a>
+                   </li>
+                   <li>
+                      <a href= "http://www.rankspirit.com">
+                        <img alt=" "
+ src="illustrations/ menu-deroulant/ cafe.gif"
+ border="none">         Café
+                      </a>
+                   </li>
+                </ul>
+              </li>
+        </ul>
+    </div>
+  </body>
+</html>
+
+
+
+Version modifiée pour un menu vertical
+
+Notre code ne nécessite qu'un infime ajustement pour afficher un menu vertical.
+
+La ligne :
+
+#monmenu ul ul {display: none; left: 144px; top: -1px; position: absolute; margin:0px; padding: 0px; border: 1px solid #B0B0B0;}
+devient :
+
+#monmenu ul ul {display: none; position: absolute; margin:0px; padding: 0px; border: 1px solid #B0B0B0;}
+#monmenu ul.niveau2 {left: 0px; top: 22px;}
+#monmenu ul.niveau3 {left: 144px; top: -1px;}
+et hop !
+
+
+
+-------------------------------------
+
+ul ul {
+   
+    position: absolute;
+    left: 144px; top: -1px;
+    margin:0px; padding: 0px;
+    border: 1px solid red;
+    background-color: black;
+    color: white;
+}
+
+li {
+    
+    list-style-type: none;
+    position: relative;
+    width: 140px;
+    background-color: black;
+    border: 1px solid grey;
+    padding: 2px;
+    margin: 0px;
+    color: white;
+}
+
+li:hover {
+    background-color: red;
+}
+
+li:hover ul.niveau2, li li:hover ul.niveau3 {
+    display: block
+}
+
+li.plus {
+    background-position:right;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid grey;
+    color: white;
+}
+
+
+
+#monmenu {
+    display: inline-block;/**/
+    font-family: trebuchet ms, arial, tahoma, verdana, sans-serif;
+    font-size: 18px;
+    text-align: left;/**/
+    font-weight:bold;
+}
+
+#monmenu ul ul {
+   
+    position: absolute;
+    margin:0px;
+    padding: 0px;
+    border: 1px solid red;
+}
+
+#monmenu ul.niveau2 {
+    left: 0px;
+    top: 22px;
+}
+
+#monmenu ul.niveau3 {
+    left: 144px;
+    top: -1px;
+}
+
+#monmenu li {
+    list-style-type: none;
+    position: relative;
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid red;
+    padding: 2px;
+    margin-bottom: 40px;
+    
+}
+
+#monmenu li:hover, #monmenu li.sfhover {
+    background-color: red;
+}
+
+#monmenu li a {
+    text-decoration:none;
+}
+
+#monmenu li:hover ul.niveau2,
+#monmenu li li:hover ul.niveau3,
+#monmenu li.sfhover ul.niveau2,
+#monmenu li li.sfhover ul.niveau3 {
+    display: block
+}
+
+#monmenu li.plus {
+    background-position:right;
+    background-image: url(illustrations/ fdroite.gif);
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #B0B0B0;
+}
+
+
+----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
